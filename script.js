@@ -12,3 +12,21 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function getSelectedCheckboxValues(name) {
+  const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+  let values = [];
+  checkboxes.forEach((checkbox) => {
+      values.push(checkbox.value);
+  });
+  return values;
+}
+
+
+
+
+
+generateBtn.addEventListener('click', (event) => {
+  console.log(getSelectedCheckboxValues('checkbox'));
+});
+
