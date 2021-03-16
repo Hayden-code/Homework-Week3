@@ -23,9 +23,6 @@ function generatePassword() {
   var password = ''
   var pwordLength = document.querySelector("#characters").value;
   if (values.includes("Lowercase")){
-    if (values.length = 3){
-      values.length = 2
-    }
     function returnCharacter(){
       var abcIndex = Math.floor(Math.random() * abc.length);
       var abcChosen = abc[abcIndex];
